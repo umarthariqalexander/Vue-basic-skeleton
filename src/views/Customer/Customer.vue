@@ -1,0 +1,9 @@
+<template>
+  <div class="wrapper">
+    <HelloWorld :msg="welcomeMessage" />
+  </div>
+</template>
+
+<script src="./customer.js" />
+
+<style scoped lang="scss" src="./customer.scss"></style>
