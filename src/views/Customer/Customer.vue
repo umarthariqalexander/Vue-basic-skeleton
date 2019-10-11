@@ -1,6 +1,7 @@
 <template>
   <div class="wrapper">
     <HelloWorld :msg="welcomeMessage" />
+    <p>{{ welcomeBanner }}</p>
   </div>
 </template>
 

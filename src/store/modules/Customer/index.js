@@ -1,9 +1,10 @@
 import * as actions from './actions'
-import * as mutations from './mutations'
 import * as getters from './getters'
+import mutations from './mutations'
 
 const state = {
-  welcomeMessage: ''
+  welcomeMessage: '',
+  welcomeBanner: ''
 }
 
 export default { namespaced: true, state, mutations, getters, actions }

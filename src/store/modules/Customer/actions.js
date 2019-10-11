@@ -1,4 +1,9 @@
+import { SET_WELCOME_MESSAGE, SET_WELCOME_BANNER } from './mutation-types'
+
 export const showWelcomeMessage = ({ commit }) => {
-  console.log('Home Action setWelcomeMessage')
-  commit('setWelcomeMessage')
+  commit(SET_WELCOME_MESSAGE)
+}
+
+export const showWelcomeBanner = ({ commit }) => {
+  commit(SET_WELCOME_BANNER)
 }

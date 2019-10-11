@@ -8,10 +8,10 @@ export default {
     HelloWorld
   },
   methods: {
-    ...mapActions(['showWelcomeMessage'])
+    ...mapActions(['showWelcomeMessage', 'showWelcomeBanner'])
   },
   computed: {
-    ...mapGetters(['welcomeMessage'])
+    ...mapGetters(['welcomeMessage', 'welcomeBanner'])
     // welcomeMessage() {
     //   // Direct access of store states // console.log(this.$store.state.Home.welcomeMessage)
     //   return this.$store.state.Home.welcomeMessage
@@ -19,5 +19,6 @@ export default {
   },
   created() {
     this.showWelcomeMessage()
+    this.showWelcomeBanner()
   }
 }
