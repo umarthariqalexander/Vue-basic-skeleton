@@ -10,6 +10,10 @@ module.exports = {
   moduleNameMapper: {
     '^@/(.*)$': '<rootDir>/src/$1'
   },
+  collectCoverage: true,
+  collectCoverageFrom: ['src/components/*.{js,vue}'],
+  coverageDirectory: '<rootDir>/tests/unit/coverage',
+  coverageReporters: ['lcov', 'text'],
   snapshotSerializers: ['jest-serializer-vue'],
   testMatch: [
     '**/tests/unit/**/*.spec.(js|jsx|ts|tsx)|**/__tests__/*.(js|jsx|ts|tsx)'
