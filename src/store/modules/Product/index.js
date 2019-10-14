@@ -1,8 +1,8 @@
-const actions = {
-  showWelcomeMessage({ commit }) {
-    console.log('About Action setWelcomeMessage')
-    commit('setWelcomeMessage')
-  }
+import * as actions from './actions'
+import mutations from './mutations'
+
+const state = {
+  allProducts: []
 }
 
-export default { actions }
+export default { namespaced: true, actions, mutations, state }
