@@ -5,9 +5,20 @@
       <router-link to="/product">Product</router-link>|
       <router-link to="/customer">Customer</router-link>
     </div>
-    <router-view />
+    <Error-Boundary>
+      <router-view />
+    </Error-Boundary>
   </div>
 </template>
+<script>
+import ErrorBoundary from '@/components/ErrorBoundary'
+export default {
+  name: 'App',
+  components: {
+    ErrorBoundary
+  }
+}
+</script>
 
 <style lang="scss">
 #app {

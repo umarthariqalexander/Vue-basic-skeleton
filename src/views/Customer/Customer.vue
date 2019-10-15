@@ -5,6 +5,6 @@
   </div>
 </template>
 
-<script src="./customer.js" />
+<script src="./customer.js"></script>
 
 <style scoped lang="scss" src="./customer.scss"></style>
